@@ -1,5 +1,5 @@
 // This allows the Javascript code inside this block to only run when the page
-// has finished loading in the browser.
+// has finished loading in the browser
 
 var myQuestion = document.getElementById("pr2__question"); 
 var myAnswer = document.getElementById("pr2__answer");
