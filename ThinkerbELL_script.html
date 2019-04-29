@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ThinkerbELL</title>
+
+    <link href="./ThinkerbELL_script.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <style>
+        table {
+            width: 100%;
+            border-left: 1px solid #444444;
+            border-collapse: collapse;
+        }
+        th, td {
+            border-right: 1px solid #444444;
+            padding: 10px;
+        }
+    </style>
+</head>
+    <body>
+        <h1>ThinkerbELL</h1>
+        <table>
+            <tr>
+                <th colspan="2">
+                    <span style="float:left"><input type="text" id="Presentation Name" placeholder="Presentation Names" style="width:1000px;font-size:20px;" /></span>
+</th>
+                <th style="width:500px">
+                    Keywords
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <span style="float:left"> Choose file: <button id="browse" onclick="">Browse</button></span>
+                </th>
+                <th>
+                    <button id="addkeywords" onclick="">+</button>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <span style="float:left">Highlight your keyword to add</span><span style="float:right"><button id="editscript" onclick="">Edit Script</button></span>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <input type="text" id="script" style="width:1000px; height:1000px;" />
+                </th>
+            </tr>
+        </table>
+        <div id='loading'><img id='loading-image' src='./loading_deer.gif' alt='Loading...' /></div>
+
+        <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+        <script src="./ThinkerbELL_script.js"></script>
+    </body>
+</html>
